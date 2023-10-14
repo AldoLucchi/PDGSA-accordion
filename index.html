@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDGSA | Gestión de materiales</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-boxes">
+        <!-- Tu logo aqui -->
+        <div class="header-img-box">
+            <img class="header-img" src="img/tulogoaqui.png" alt="Logo">
+        </div>
+        <!-- Tu titulo aqui -->
+        <div class="header-text-box">
+            <h1>Titulo de Página</h1>
+        </div>
+        <!-- Tus modulos de cabecera personalizados aqui -->
+        <div class="header-widgets-box">
+            <div class="header-widgets">
+                <span class="header-widget">Widget 1</span>
+                <span class="header-widget">Widget 2</span>
+                <span class="header-widget">Widget 3</span>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="container-fluid main">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    
+    <!-- ACCORDION 1 -->
+    <div class="accordion" id="accordionFlushExample">
+      <!-- Grupo 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button group-01 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Grupo 1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <!-- Actividad 1 -->
+            <div class="accordion" id="accordionActivities1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="activity1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#activity1-collapse" aria-expanded="false" aria-controls="activity1-collapse">
+                    Actividad 1
+                  </button>
+                </h2>
+                <div id="activity1-collapse" class="accordion-collapse collapse" aria-labelledby="activity1-heading" data-bs-parent="#accordionActivities1">
+                  <div class="accordion-body">
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 1</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus" id="count-01">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Material 2 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 2</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus" id="stock-disp-02">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus" id="count-02">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Material 3 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 3</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus" id="stock-disp-03">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus" id="count-03">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div>
+                    <div id="total-element-discounted"></div>
+                  </div>
+                  <!-- BOTON -->
+                  <div class="btn-process-exit-box">
+                    <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Actividad 2 -->
+            <div class="accordion" id="accordionActivities2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="activity2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#activity2-collapse" aria-expanded="false" aria-controls="activity2-collapse">
+                    Actividad 2
+                  </button>
+                </h2>
+                <div id="activity2-collapse" class="accordion-collapse collapse" aria-labelledby="activity2-heading" data-bs-parent="#accordionActivities2">
+                  <div class="accordion-body">
+
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 1</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <!-- Material 2 -->
+                            <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 2</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <!-- Material 3 -->
+                            <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 3</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                            </div>
+                        <!-- BOTON -->
+                        <div class="btn-process-exit-box">
+                            <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Actividad 3 -->
+            <div class="accordion" id="accordionActivities3">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="activity3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#activity3-collapse" aria-expanded="false" aria-controls="activity3-collapse">
+                    Actividad 3
+                  </button>
+                </h2>
+                <div id="activity3-collapse" class="accordion-collapse collapse" aria-labelledby="activity3-heading" data-bs-parent="#accordionActivities3">
+                  <div class="accordion-body">
+
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                        <div class="accordion-body-content-boxes">
+                            <div class="content-box-material">
+                                <h6>Material 1</h6>
+                            </div>
+                            <div class="content-box-stock">
+                                <span>Stock Actual: </span>
+                                <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                            </div>
+                            <div class="content-box-count">
+                                <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                <div class="content-material changeStatus">0</div>
+                                <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                            </div>
+                            <div class="content-box-stock-count">
+                                <span>Uds Restantes: </span>
+                                <div class="content-stock content-stock-discount-box changeStatus"></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Material 2 -->
+                        <div class="accordion-body-content">
+                        <div class="accordion-body-content-boxes">
+                            <div class="content-box-material">
+                                <h6>Material 2</h6>
+                            </div>
+                            <div class="content-box-stock">
+                                <span>Stock Actual: </span>
+                                <div class="content-stock content-total-stock changeStatus">20</div>
+                            </div>
+                            <div class="content-box-count">
+                                <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                <div class="content-material changeStatus">0</div>
+                                <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                            </div>
+                            <div class="content-box-stock-count">
+                                <span>Uds Restantes: </span>
+                                <div class="content-stock content-stock-discount-box changeStatus"></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Material 3 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 3</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BOTON -->
+                        <div class="btn-process-exit-box">
+                            <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCORDION 2 -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button group-02 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGroup2" aria-expanded="false" aria-controls="collapseGroup2">
+              Grupo 2
+            </button>
+          </h2>
+          <div id="collapseGroup2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion accordion-flush" id="accordionActivities">
+                <!-- Actividad 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActivity21" aria-expanded="false" aria-controls="collapseActivity21">
+                      Actividad 1
+                    </button>
+                  </h2>
+                  <div id="collapseActivity21" class="accordion-collapse collapse">
+                    <div class="accordion-body accordion-body-materials">
+
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                        <div class="accordion-body-content-boxes">
+                            <div class="content-box-material">
+                                <h6>Material 1</h6>
+                            </div>
+                            <div class="content-box-stock">
+                                <span>Stock Actual: </span>
+                                <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                            </div>
+                            <div class="content-box-count">
+                                <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                <div class="content-material changeStatus" id="count-01"></div>
+                                <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                            </div>
+                            <div class="content-box-stock-count">
+                                <span>Uds Restantes: </span>
+                                <div class="content-stock content-stock-discount-box changeStatus"></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Material 2 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 2</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus" id="count-02"></div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                            </div>
+
+                            
+                        <!-- Material 3 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 3</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus" id="count-03"></div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BOTON -->
+                        <div class="btn-process-exit-box">
+                            <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Actividad 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActivity22" aria-expanded="false" aria-controls="collapseActivity22">
+                      Actividad 2
+                    </button>
+                  </h2>
+                  <div id="collapseActivity22" class="accordion-collapse collapse">
+                    <div class="accordion-body accordion-body-materials">
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                        <div class="accordion-body-content-boxes">
+                            <div class="content-box-material">
+                                <h6>Material 1</h6>
+                            </div>
+                            <div class="content-box-stock">
+                                <span>Stock Actual: </span>
+                                <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                            </div>
+                            <div class="content-box-count">
+                                <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                <div class="content-material changeStatus">0</div>
+                                <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                            </div>
+                            <div class="content-box-stock-count">
+                                <span>Uds Restantes: </span>
+                                <div class="content-stock content-stock-discount-box changeStatus"></div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Material 2 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 2</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                            
+                        <!-- Material 3 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 3</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BOTON -->
+                        <div class="btn-process-exit-box">
+                            <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Actividad 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActivity23" aria-expanded="false" aria-controls="collapseActivity23">
+                      Actividad 3
+                    </button>
+                  </h2>
+                  <div id="collapseActivity23" class="accordion-collapse collapse">
+                    <div class="accordion-body accordion-body-materials">
+                        <!-- Material 1 -->
+                        <div class="accordion-body-content">
+                            <div class="accordion-body-content-boxes">
+                                <div class="content-box-material">
+                                    <h6>Material 1</h6>
+                                </div>
+                                <div class="content-box-stock">
+                                    <span>Stock Actual: </span>
+                                    <div class="content-stock content-total-stock changeStatus" id="stock-disp-01">20</div>
+                                </div>
+                                <div class="content-box-count">
+                                    <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                    <div class="content-material changeStatus">0</div>
+                                    <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                </div>
+                                <div class="content-box-stock-count">
+                                    <span>Uds Restantes: </span>
+                                    <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <!-- Material 2 -->
+                            <div class="accordion-body-content">
+                                <div class="accordion-body-content-boxes">
+                                    <div class="content-box-material">
+                                        <h6>Material 2</h6>
+                                    </div>
+                                    <div class="content-box-stock">
+                                        <span>Stock Actual: </span>
+                                        <div class="content-stock content-total-stock changeStatus">20</div>
+                                    </div>
+                                    <div class="content-box-count">
+                                        <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                        <div class="content-material changeStatus">0</div>
+                                        <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                    </div>
+                                    <div class="content-box-stock-count">
+                                        <span>Uds Restantes: </span>
+                                        <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                    </div>
+                                </div>
+                                </div>
+    
+                                
+                            <!-- Material 3 -->
+                            <div class="accordion-body-content">
+                                <div class="accordion-body-content-boxes">
+                                    <div class="content-box-material">
+                                        <h6>Material 3</h6>
+                                    </div>
+                                    <div class="content-box-stock">
+                                        <span>Stock Actual: </span>
+                                        <div class="content-stock content-total-stock changeStatus">20</div>
+                                    </div>
+                                    <div class="content-box-count">
+                                        <button class="button-substract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg></button>
+                                        <div class="content-material changeStatus">0</div>
+                                        <button class="button-add"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                                    </div>
+                                    <div class="content-box-stock-count">
+                                        <span>Uds Restantes: </span>
+                                        <div class="content-stock content-stock-discount-box changeStatus"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BOTON -->
+                            <div class="btn-process-exit-box">
+                                <button type="button" class="btn btn-primary btn-process-exit">Procesar Salida</button>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
